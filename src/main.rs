@@ -40,9 +40,9 @@ fn main() -> Result<()> {
     // 3. 读取并解析 TOML
     let config_content = std::fs::read_to_string(&config_path)
         .with_context(|| format!("读取配置文件失败: {:?}", config_path))?;
-    
-    let config: Config = toml::from_str(&config_content)
-        .context("解析配置文件失败，请检查 TOML 格式是否正确")?;
+
+    let config: Config =
+        toml::from_str(&config_content).context("解析配置文件失败，请检查 TOML 格式是否正确")?;
 
     // 4. 构建命令参数列表
     let mut args = vec![
