@@ -1,0 +1,12 @@
+# 游戏主程序路径 (注意双反斜杠或使用正斜杠)
+game_exe = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ELDEN RING\\Game\\eldenring.exe"
+
+# me3.exe 程序路径
+me3_exe = ".\\me3p\\bin\\me3.exe"
+
+# mod 配置文件路径
+me3_file = ".\\Mods\\current.me3"
+
+# 附加参数
+# --game eldenring 已移至此处，如需支持其他游戏修改此处即可
+extra_args = ["--game", "eldenring"]
